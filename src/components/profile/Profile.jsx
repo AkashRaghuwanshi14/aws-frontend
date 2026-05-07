@@ -27,7 +27,7 @@ const Profile = () => {
     const Fetchuserdetail = async () => {
 
       try {
-        let res = await axios.get(`http://localhost:3000/api/user/profile/${userId}`);
+        let res = await axios.get(`54.199.96.137:3000/api/user/profile/${userId}`);
         // console.log(res.data.User);
         setuserdetail(res.data.User);
 
