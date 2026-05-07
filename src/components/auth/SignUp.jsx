@@ -17,7 +17,7 @@ const SignUp = () => {
      e.preventDefault();
       try{ 
            setloading(true);
-          let res=await axios.post("http://54.199.96.137:3000/api/user/signup",{
+          let res=await axios.post("https://my-aws-backend.onrender.com/api/user/signup",{
               email:email,
               username:user,
               password:password

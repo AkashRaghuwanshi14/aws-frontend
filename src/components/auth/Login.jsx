@@ -27,7 +27,7 @@ const Login = () => {
           e.preventDefault();
         try{
               setloading(true);
-              let res=await axios.post("http://54.199.96.137:3000/api/user/login",{
+              let res=await axios.post("https://my-aws-backend.onrender.com/api/user/login",{
                   email:email,
                   password:password
               })

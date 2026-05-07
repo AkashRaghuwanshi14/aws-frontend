@@ -18,7 +18,7 @@ const Update = () => {
 
         try {
 
-            await axios.patch(`http://54.199.96.137:3000/api/user/update/${userid}`, {
+            await axios.patch(`https://my-aws-backend.onrender.com/api/user/update/${userid}`, {
                 email: email,
                 password: password
             })
