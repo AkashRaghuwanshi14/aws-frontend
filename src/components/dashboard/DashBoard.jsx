@@ -30,7 +30,7 @@ const DashBoard = () => {
     const fetchrepo = async () => {
 
       try {
-        const res = await axios.get(`54.199.96.137:3000/api/repo/user/${userId}`);
+        const res = await axios.get(`http://54.199.96.137:3000/api/repo/user/${userId}`);
         setrepositories(res.data.repository);
 
       } catch (err) {
@@ -41,7 +41,7 @@ const DashBoard = () => {
     const fetchallsuggestedrepo = async () => {
 
       try {
-        const res = await axios.get(`54.199.96.137:3000/api/repo/all`);
+        const res = await axios.get(`http://54.199.96.137:3000/api/repo/all`);
         setsuggestedrepository(res.data.repository);
 
       } catch (err) {

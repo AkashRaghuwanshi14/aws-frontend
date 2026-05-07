@@ -39,7 +39,7 @@ const RepoPage = () => {
 
             try {
 
-                let res = await axios.get(`54.199.96.137:3000/api/repo/id/${id}`);
+                let res = await axios.get(`http://54.199.96.137:3000/api/repo/id/${id}`);
               //  console.log(res.data.repositoy);
                 setrepodetail(res.data.repositoy);
             }
